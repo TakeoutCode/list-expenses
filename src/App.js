@@ -1,29 +1,37 @@
-import React from "react";
-import { Helmet } from "react-helmet";
+import React from 'react';
+import { Helmet } from 'react-helmet';
 import {
   Header,
-  Title,
-  ContainerHeader,
-  ContainerButton,
-} from "./elements/Header";
-import Button from "./elements/Button";
+  Titulo,
+  ContenedorHeader,
+  ContenedorBotones,
+} from './elementos/Header';
+import Boton from './elementos/Boton';
+import BotonCerrarSesion from './elementos/BotonCerrarSesion';
+import FormularioGasto from './componentes/FormularioGasto';
+import BarraTotalGastado from './componentes/BarraTotalGastado';
 
 const App = () => {
   return (
     <>
       <Helmet>
-        <title>Add Expense</title>
+        <title>Agregar Gasto</title>
       </Helmet>
+
       <Header>
-        <ContainerHeader>
-          <Title>Add Expense</Title>
-          <ContainerButton>
-            <Button to="/categories">Categories</Button>
-            <Button to="/list">List of Expenses</Button>
-            <Button to="/">x</Button>
-          </ContainerButton>
-        </ContainerHeader>
+        <ContenedorHeader>
+          <Titulo>Agregar Gasto</Titulo>
+          <ContenedorBotones>
+            <Boton to='/categorias'>Categorías</Boton>
+            <Boton to='/lista'>Lista de Gastos</Boton>
+            <BotonCerrarSesion />
+          </ContenedorBotones>
+        </ContenedorHeader>
       </Header>
+
+      <FormularioGasto />
+
+      <BarraTotalGastado />
     </>
   );
 };
