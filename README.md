@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# List-Expenses 
+### Descripción
+##### _Te presentamos Lista Gastos, una plataforma web diseñada especialmente para que puedas llevar un seguimiento detallado de tus gastos. Ahora podrás tener un mayor control sobre tus finanzas personales de manera eficiente y organizada. Con nuestra herramienta, podrás categorizar tus gastos de acuerdo a tus necesidades, lo que te permitirá identificar fácilmente en qué áreas estás gastando más y tomar decisiones informadas sobre tu presupuesto. Además, también ofrecemos la opción de clasificar los gastos por mes, lo que te brinda una visión clara de tus patrones de gasto a lo largo del tiempo. Simplifica la administración de tus finanzas y toma el control de tus gastos con Lista Gastos._
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##### Visita la página web oficial de [List-Expenses](https://list-expenses.takeoutcode.com/)
 
-## Available Scripts
+### Tecnologías usadas
+![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![React.JS](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Firebase](https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-In the project directory, you can run:
+# Requisitos
+- Node.js
+- npm
+> Para este proyecto se utilizó npm como administrador de paquetes.
 
-### `npm start`
+### _Instalación del repositorio_
+> Clonar Repositorio con HTTPS:
+```
+git clone https://github.com/TakeoutCode/list-expenses.git
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+> Clonar Repositorio con SSH:
+```
+git clone git@github.com:TakeoutCode/list-expenses.git
+```
+> En caso de que se haga un fork, instalar con el enlace que se generó.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### _Instalación de dependencias_
 
-### `npm test`
+```
+npm install
+```
+### _Renombra el archivo para las variables de entonrno_
+En la raiz del proyecto, renombra el archivo **.env.template** a **.env.local**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Después del símbolo =, debes agregar lo valores de tus variables de entorno. Todas las variables las encontarras en [Firebase](https://firebase.google.com/)
+```
+REACT_APP_APIKEY=
+REACT_APP_AUTHDOMAIN=
+REACT_APP_PROJECTID=
+REACT_APP_STORAGEBUCKET=
+REACT_APP_MESSAGINGSENDERID=
+REACT_APP_APPID=
+```
+Una vez que tengas las claves, agrega cada una a su respectivo campo sin agregar espacios ni comillas de ningún tipo.
 
-### `npm run build`
+### _Inicializar app_
+```
+  npm run start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Contribuir
+- Si deseas contribuir al desarrollo de List-Expenses, siéntete libre de hacer un fork de este repositorio y enviar un pull request con tus mejoras.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Autor
+- List-Expenses fue desarrollado por **Braulio Quezada @TakeoutCode**.- 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Licencia
+- List-Expenses se distribuye bajo la licencia (MIT). Para más información, revisa el archivo LICENSE en este repositorio.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**_Espero que esta información te sea útil. Si necesitas más ayuda, no dudes en preguntar. ¡Que tengas un buen día!_**
